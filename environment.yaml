@@ -1,0 +1,21 @@
+# Python environment used for the analysis (versions as run on the study's cluster).
+#   conda env create -f environment.yaml
+#   conda activate mci_ad
+name: mci_ad
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.13.1
+  - pip
+  - pip:
+      - numpy==2.3.2
+      - pandas==2.3.2
+      - scipy==1.16.1
+      - scikit-learn==1.7.1
+      - scikit-survival==0.25.0
+      - statsmodels==0.14.5
+      - matplotlib==3.10.5
+      - seaborn==0.13.2
+      - joblib==1.5.1
+      - fastparquet==2024.11.0
